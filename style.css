@@ -23,11 +23,31 @@ body {
 }
 
 body {
-    background-color: rgb(25, 25, 25);
-    /*background-color: rgb(250, 250, 250);*/
-    color: rgb(212, 212, 212);
     line-height: 1.5;
     white-space: normal;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body {
+    background-color: rgb(222, 229, 220);
+    color: rgb(65, 65, 65);
+}
+
+header {
+    padding-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+body.dark {
+    background-color: rgb(25, 25, 25);
+    color: rgb(212, 212, 212);
+}
+
+
+.dark-mode-toggle {
+    cursor: pointer;
+    font-size: 1.5rem;
 }
 
 a,
@@ -118,6 +138,9 @@ hr {
     height: 1px;
     visibility: visible;
     border: none;
+    border-bottom: 1px solid rgba(50, 50, 50, 0.09);
+}
+hr.dark{
     border-bottom: 1px solid rgba(212, 212, 212, 0.09);
 }
 
@@ -279,7 +302,7 @@ ol > li {
 
 .accordions > .header {
     position: relative;
-    padding-left: 1.5em; /* 화살표를 위한 여백 */
+    padding-left: 1.5em;
     cursor: pointer;
 }
 
@@ -616,12 +639,26 @@ code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mo
 .highlight-orange_background {
     background: rgba(251, 236, 221, 1);
 }
-.highlight-yellow_background {
+
+/* dark mode */
+.highlight-yellow_background.dark {
     background: rgba(86, 67, 40, 1);
 }
-.highlight-teal_background {
+.highlight-teal_background.dark {
     background: rgba(36, 61, 48, 1);
 }
+.highlight-yellow_background {
+    transition: background-color 0.3s, color 0.3s;
+    color: rgb(250, 250, 250);
+    background: rgba(203, 145, 47, 1);
+}
+.highlight-teal_background {
+    transition: background-color 0.3s, color 0.3s;
+    color: rgb(250, 250, 250);
+    background: rgba(68, 131, 97, 1);
+}
+/* /dark mode */
+
 .highlight-blue_background {
     background: rgba(231, 243, 248, 1);
 }
