@@ -240,7 +240,7 @@ ul.to-do-list > li {
     opacity: 0.375;
 }
 
-ul.toggle > li {
+ul.accordions > li {
     list-style: none;
 }
 
@@ -268,17 +268,50 @@ ol > li {
     text-indent: -0.4em;
 }
 
-.toggle {
+.accordions > .inner {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+.accordions.open > .inner {
+    max-height: 5000px;
+}
+
+.accordions > .header {
+    position: relative;
+    padding-left: 1.5em; /* 화살표를 위한 여백 */
+    cursor: pointer;
+}
+
+.accordions > .header::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%) rotate(-45deg);
+    width: 0.6em;
+    height: 0.6em;
+    border-right: 2px solid currentColor;
+    border-bottom: 2px solid currentColor;
+    transition: transform 0.3s ease;
+}
+
+.accordions.open > .header::before {
+    transform: translateY(-50%) rotate(45deg);
+}
+
+
+.accordions {
     padding-inline-start: 0em;
     list-style-type: none;
 }
 
 /* Indent toggle children */
-.toggle > li > details {
+.accordions {
     padding-left: 1.7em;
 }
 
-.toggle > li > details > summary {
+.accordions > .header {
     margin-left: -1.1em;
 }
 

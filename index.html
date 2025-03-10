@@ -3,6 +3,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>전진석</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="animation.js" defer></script>
 </head>
 <body>
 <article class="page sans">
@@ -87,18 +88,42 @@
         <p class="">TRPG에서 영감을 얻은 세계관 생성, 체험 플랫폼</p>
         <figure class="image"><a href="images/logo.png"><img class="img-title" style="width:480px" src="images/logo.png"/></a>
         </figure>
-        <ul class="toggle">
-            <li>
-                <details>
-                    <summary>
-                        <mark class="highlight-yellow_background">이미지 자료</mark>
-                    </summary>
-                    <figure class="image"><a href="images/2024-11-26_201848.png"><img class="img-detail" src="images/2024-11-26_201848.png"/></a></figure>
-                    <figure class="image"><a href="images/2024-11-27_224718.png"><img class="img-detail" src="images/2024-11-27_224718.png"/></a></figure>
-                    <figure class="image"><a href="images/2024-11-26_201541.png"><img class="img-detail" src="images/2024-11-26_201541.png"/></a></figure>
-                </details>
-            </li>
-        </ul>
+        <div class="accordions">
+            <div class="header">
+                <mark class="highlight-yellow_background">이미지 자료</mark>
+            </div>
+            <div class="inner">
+                <figure class="image"><a href="images/2024-11-26_201848.png">
+                    <img class="img-detail" src="images/2024-11-26_201848.png"/></a>
+                </figure>
+                <figure class="image"><a href="images/2024-11-27_224718.png">
+                    <img class="img-detail" src="images/2024-11-27_224718.png"/></a>
+                </figure>
+                <figure class="image"><a href="images/2024-11-26_201541.png">
+                    <img class="img-detail" src="images/2024-11-26_201541.png"/></a>
+                </figure>
+                <div class="accordions nested">
+                    <div class="header">
+                        <mark class="highlight-yellow_background">로직 설명할 때 썼던 자료</mark>
+                    </div>
+                    <div class="inner">
+                        <figure class="image"><a href="images/fullLogic.png">
+                            <img class="img-detail" src="images/fullLogic.png"/></a>
+                        </figure>
+                    </div>
+                </div>
+                <p class="">API 응답 시간을 측정하기 위해 Aspect를 사용한 로그　　
+                    <em>
+                        <mark class="highlight-gray">//시간 측정 로그만 표시중</mark>
+                    </em>
+                </p>
+                <figure class="image"><a href="images/image%204.png"><img
+                        style="width:100%" src="images/image%204.png"/></a></figure>
+                <p class="">로깅이 실행시간에 주는 영향을 최소화 하기 위해 비동기 로깅 설정 추가</p>
+                <figure class="image"><a href="images/image%205.png"><img
+                        class="img-detail" src="images/image%205.png"/></a></figure>
+            </div>
+        </div>
         <h3 class=""><strong>데이터 관리</strong></h3>
         <ul class="bulleted-list">
             <li style="list-style-type:disc"><strong>CRUD API </strong>: 세계관, 아바타, 월드, 방 생성 및 관리</li>
@@ -130,75 +155,13 @@
         </p>
         <p class="">
         </p>
-        <p class="">진행 로직 설계
-        <div class="indented">
-            <figure class="image"><a href="images/image.png"><img
-                style="width:681.96875px" src="images/image.png" /></a></figure>
-        </div>
-        </p>
-        <ul class="toggle">
-            <li>
-                <details>
-                    <summary>
-                        <mark class="highlight-yellow_background">전체 플로우</mark>
-                    </summary>
-                    <ul class="bulleted-list">
-                        <li style="list-style-type:disc">방 시작</li>
-                    </ul>
-                    <figure class="image"><a
-                        href="images/8c92e1c1-de81-4778-85d4-923c16894e1c.png">
-                        <img class="img-detail" src="images/8c92e1c1-de81-4778-85d4-923c16894e1c.png" /></a>
-                    </figure>
-                    <ul class="bulleted-list">
-                        <li style="list-style-type:disc">대화 시작</li>
-                    </ul>
-                    <figure class="image"><a href="images/image%201.png"><img
-                        class="img-detail" src="images/image%201.png" /></a></figure>
-                    <ul class="bulleted-list">
-                        <li style="list-style-type:disc">진행 루프</li>
-                    </ul>
-                    <figure class="image"><a
-                        href="images/8c275a85-4be7-4c6f-925c-8d8e90621047.png">
-                        <img class="img-detail" src="images/8c275a85-4be7-4c6f-925c-8d8e90621047.png" /></a>
-                    </figure>
-                    <ul class="bulleted-list">
-                        <li style="list-style-type:disc">대화 종료</li>
-                    </ul>
-                    <figure class="image"><a href="images/image%202.png"><img
-                        class="img-detail" src="images/image%202.png" /></a></figure>
-                    <ul class="bulleted-list">
-                        <li style="list-style-type:disc">방 종료</li>
-                    </ul>
-                    <figure class="image"><a href="images/image%203.png"><img
-                        class="img-detail" src="images/image%203.png" /></a></figure>
-                </details>
-            </li>
-        </ul>
-        <ul class="toggle">
-            <li>
-                <details>
-                    <summary>
-                        <mark class="highlight-yellow_background">API 응답 시간을 측정하기 위해 Aspect를 사용한 로그</mark>
-                    </summary>
-                    <p class=""><em>
-                        <mark class="highlight-gray">//시간 측정 로그만 표시중</mark>
-                    </em></p>
-                    <figure class="image"><a href="images/image%204.png"><img
-                        style="width:681.875px" src="images/image%204.png" /></a></figure>
-                </details>
-            </li>
-        </ul>
-        <ul class="toggle">
-            <li>
-                <details>
-                    <summary>
-                        <mark class="highlight-yellow_background">로깅이 실행시간에 주는 영향을 최소화 하기 위해 비동기 로깅 설정 추가</mark>
-                    </summary>
-                    <figure class="image"><a href="images/image%205.png"><img
-                        style="width:681.96875px" src="images/image%205.png" /></a></figure>
-                </details>
-            </li>
-        </ul>
+<!--        <p class="">진행 로직 설계</p>-->
+<!--        <div class="indented">-->
+<!--            <figure class="image"><a href="images/image.png"><img-->
+<!--                style="width:681.96875px" src="images/image.png" /></a></figure>-->
+<!--        </div>-->
+
+        <br>
         <hr />
         <hr />
         <div class="column-list">
@@ -231,42 +194,41 @@
         </p>
         <figure class="image"><a href="images/PolyChat.png"><img class="img-title" style="width:345px" src="images/PolyChat.png" /></a>
         </figure>
-        <ul class="toggle">
-            <li>
-                <details>
-                    <summary>
-                        <mark class="highlight-yellow_background">이미지 자료</mark>
-                    </summary>
-                    <figure class="image"><a href="images/image%206.png"><img
-                            class="img-detail" src="images/image%206.png" /></a></figure>
-                    <figure class="image"><a href="images/image%207.png"><img
-                        class="img-detail" src="images/image%207.png" /></a></figure>
-                    <figure class="image"><a href="images/image%208.png"><img
-                        class="img-detail" src="images/image%208.png" /></a></figure>
-                    <figure class="image"><a href="images/image%209.png"><img
-                        class="img-detail" src="images/image%209.png" /></a></figure>
-                    <figure class="image"><a href="images/image%2010.png"><img
-                        class="img-detail" src="images/image%2010.png" /></a></figure>
-                    <p class="">
-                    </p>
-                    <p class="">아키텍쳐</p>
-                    <figure class="image"><a
+        <div class="accordions">
+            <div class="header">
+                <mark class="highlight-yellow_background">이미지 자료</mark>
+            </div>
+            <div class="inner">
+                <figure class="image"><a href="images/image%206.png"><img
+                        class="img-detail" src="images/image%206.png"/></a></figure>
+                <figure class="image"><a href="images/image%207.png"><img
+                        class="img-detail" src="images/image%207.png"/></a></figure>
+                <figure class="image"><a href="images/image%208.png"><img
+                        class="img-detail" src="images/image%208.png"/></a></figure>
+                <figure class="image"><a href="images/image%209.png"><img
+                        class="img-detail" src="images/image%209.png"/></a></figure>
+                <figure class="image"><a href="images/image%2010.png"><img
+                        class="img-detail" src="images/image%2010.png"/></a></figure>
+                <p class="">
+                </p>
+                <p class="">아키텍쳐</p>
+                <figure class="image"><a
                         href="images/399983980-020275ee-47d2-4ea6-9388-8788303450d2.png">
-                        <img class="img-detail" src="images/399983980-020275ee-47d2-4ea6-9388-8788303450d2.png" /></a>
-                    </figure>
-                    <p class="">
-                    </p>
-                    <p class="">Github를 이용한 형상관리</p>
-                    <figure class="image"><a href="images/image%2011.png"><img
-                        class="img-detail" src="images/image%2011.png" /></a></figure>
-                    <p class="">
-                    </p>
-                    <p class="">Jira를 이용한 일정관리</p>
-                    <figure class="image"><a href="images/image%2012.png"><img
-                        class="img-detail" src="images/image%2012.png" /></a></figure>
-                </details>
-            </li>
-        </ul>
+                    <img class="img-detail"
+                         src="images/399983980-020275ee-47d2-4ea6-9388-8788303450d2.png"/></a>
+                </figure>
+                <p class="">
+                </p>
+                <p class="">Github를 이용한 형상관리</p>
+                <figure class="image"><a href="images/image%2011.png"><img
+                        class="img-detail" src="images/image%2011.png"/></a></figure>
+                <p class="">
+                </p>
+                <p class="">Jira를 이용한 일정관리</p>
+                <figure class="image"><a href="images/image%2012.png"><img
+                        class="img-detail" src="images/image%2012.png"/></a></figure>
+            </div>
+        </div>
         <h3 class="">로그인 구현</h3>
         <ul class="bulleted-list">
             <li style="list-style-type:disc">회원가입 API, 유저 정보 CRUD
@@ -286,6 +248,7 @@
                 </ul>
             </li>
         </ul>
+        <br>
         <hr />
         <hr />
         <div class="column-list">
@@ -316,23 +279,21 @@
         <p class="">언리얼 기반 가상회의 서비스</p>
         <figure class="image"><a href="images/image%2013.png"><img  class="img-title"
             style="width:336px" src="images/image%2013.png" /></a></figure>
-        <ul class="toggle">
-            <li>
-                <details>
-                    <summary>
-                        <mark class="highlight-yellow_background">이미지 자료</mark>
-                    </summary>
-                    <figure class="image"><a href="images/image%2014.png"><img
-                        class="img-detail" src="images/image%2014.png" /></a></figure>
-                    <figure class="image"><a href="images/image%2015.png"><img
-                        class="img-detail" src="images/image%2015.png" /></a></figure>
-                    <figure class="image"><a href="images/image%2016.png"><img
-                        class="img-detail" src="images/image%2016.png" /></a></figure>
-                    <figure class="image"><a href="images/image%2017.png"><img
-                        class="img-detail" src="images/image%2017.png" /></a></figure>
-                </details>
-            </li>
-        </ul>
+        <div class="accordions">
+            <div class="header">
+                <mark class="highlight-yellow_background">이미지 자료</mark>
+            </div>
+            <div class="inner">
+                <figure class="image"><a href="images/image%2014.png"><img
+                        class="img-detail" src="images/image%2014.png"/></a></figure>
+                <figure class="image"><a href="images/image%2015.png"><img
+                        class="img-detail" src="images/image%2015.png"/></a></figure>
+                <figure class="image"><a href="images/image%2016.png"><img
+                        class="img-detail" src="images/image%2016.png"/></a></figure>
+                <figure class="image"><a href="images/image%2017.png"><img
+                        class="img-detail" src="images/image%2017.png"/></a></figure>
+            </div>
+        </div>
         <ul class="bulleted-list">
             <li style="list-style-type:disc">AI요약, 요약 내용 CRUD
                 <ul class="bulleted-list">
@@ -347,6 +308,7 @@
                 </ul>
             </li>
         </ul>
+        <br>
         <hr />
         <hr />
         <div class="column-list">
@@ -375,19 +337,17 @@
             href="images/347337638-6c0d45fb-c4d0-40e7-b559-f85da3957782.png">
             <img style="width:192px" src="images/347337638-6c0d45fb-c4d0-40e7-b559-f85da3957782.png" /></a>
         </figure>
-        <ul class="toggle">
-            <li>
-                <details>
-                    <summary>
-                        <mark class="highlight-yellow_background">이미지 자료</mark>
-                    </summary>
-                    <figure class="image"><a href="images/image%2018.png"><img
-                        class="img-detail" src="images/image%2018.png" /></a></figure>
-                    <figure class="image"><a href="images/image%2019.png"><img
-                        class="img-detail" src="images/image%2019.png" /></a></figure>
-                </details>
-            </li>
-        </ul>
+        <div class="accordions">
+            <div class="header">
+                <mark class="highlight-yellow_background">이미지 자료</mark>
+            </div>
+            <div class="inner">
+                <figure class="image"><a href="images/image%2018.png"><img
+                        class="img-detail" src="images/image%2018.png"/></a></figure>
+                <figure class="image"><a href="images/image%2019.png"><img
+                        class="img-detail" src="images/image%2019.png"/></a></figure>
+            </div>
+        </div>
         <ul class="bulleted-list">
             <li style="list-style-type:disc">알람 페이지 작성
                 <ul class="bulleted-list">
@@ -395,6 +355,7 @@
                 </ul>
             </li>
         </ul>
+        <br>
         <hr />
         <hr />
         <p class="">
