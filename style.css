@@ -39,7 +39,7 @@ header {
     justify-content: space-between;
     align-items: center;
 }
-body.dark {
+body.dark-mode {
     background-color: rgb(25, 25, 25);
     color: rgb(212, 212, 212);
 }
@@ -140,7 +140,7 @@ hr {
     border: none;
     border-bottom: 1px solid rgba(50, 50, 50, 0.09);
 }
-hr.dark{
+hr.dark-mode{
     border-bottom: 1px solid rgba(212, 212, 212, 0.09);
 }
 
@@ -641,10 +641,10 @@ code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mo
 }
 
 /* dark mode */
-.highlight-yellow_background.dark {
+.highlight-yellow_background.dark-mode {
     background: rgba(86, 67, 40, 1);
 }
-.highlight-teal_background.dark {
+.highlight-teal_background.dark-mode {
     background: rgba(36, 61, 48, 1);
 }
 .highlight-yellow_background {
