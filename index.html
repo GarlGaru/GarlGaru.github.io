@@ -132,23 +132,23 @@
         </div>
         <h3 class=""><strong>데이터 관리</strong></h3>
         <ul class="bulleted-list">
-            <li style="list-style-type:disc"><strong>CRUD API </strong>: 세계관, 아바타, 월드, 방 생성 및 관리</li>
+            <li style="list-style-type:disc">CRUD API : 세계관, 아바타, 월드, 방 생성 및 관리</li>
         </ul>
         <ul class="bulleted-list">
-            <li style="list-style-type:disc"><strong>데이터 최적화 로직 설계 </strong>: AI 대사 생성시 이전 대화를 요약하여 성능 저하 방지</li>
-        </ul>
-        <ul class="bulleted-list">
-            <li style="list-style-type:disc"><strong>주사위 판정 서버 처리 </strong>: 조작 방지를 위해 클라이언트가 아닌 백엔드에서 판정 수행</li>
+            <li style="list-style-type:disc">주사위 판정 서버 처리 : 조작 방지를 위해 클라이언트가 아닌 백엔드에서 판정 수행</li>
         </ul>
         <h3 class=""><strong>AI 연동</strong></h3>
         <ul class="bulleted-list">
             <li style="list-style-type:disc">WebClient로 다른 팀원이 구축한 서버로 연결</li>
         </ul>
         <ul class="bulleted-list">
-            <li style="list-style-type:disc">AI 서버 통신 : NPC 대사 생성 및 퀘스트 클리어 판정</li>
+            <li style="list-style-type:disc">AI 서버 통신 : NPC 대사 생성, 퀘스트 클리어 판정</li>
         </ul>
         <ul class="bulleted-list">
-            <li style="list-style-type:disc">퀘스트 클리어 판정 로직 설계 : NPC 대화, 주사위 결과, 전투 데이터를 AI에 전달하여 결과 판별</li>
+            <li style="list-style-type:disc">퀘스트 클리어 판정 로직 설계 : NPC 대화, 주사위 결과, 전투 데이터를 조합해 AI에 전달하여 결과 판별</li>
+        </ul>
+        <ul class="bulleted-list">
+            <li style="list-style-type:disc"><strong>토큰 최적화 설계 </strong>: AI 대사 생성시 이전 대화를 요약하여 토큰을 최소화, 성능 저하 방지</li>
         </ul>
         <h3 class=""><strong>SSE(Server-Sent Events) 활용</strong></h3>
         <ul class="bulleted-list">
@@ -246,13 +246,9 @@
         <ul class="bulleted-list">
             <li style="list-style-type:disc">구글 Oauth 2.0 로그인 구현</li>
         </ul>
-        <h3 class="">도메인 연결</h3>
+        <h3 class="">Nginx 도입</h3>
         <ul class="bulleted-list">
-            <li style="list-style-type:disc">Nginx 도입
-                <ul class="bulleted-list">
-                    <li style="list-style-type:circle">WebRTC, React 서버와 함께 같은 도메인과 인증서를 사용하도록 하기 위해 도입</li>
-                </ul>
-            </li>
+            <li style="list-style-type:disc">WebRTC, React 서버와 함께 같은 도메인과 인증서를 사용하도록 하기 위해 도입</li>
         </ul>
         <br>
         <hr class="dark-mode" />
@@ -300,19 +296,13 @@
                         class="img-detail" src="images/image%2017.png"/></a></figure>
             </div>
         </div>
+        <h3 class=""><strong>AI요약, 요약 내용 CRUD</strong></h3>
         <ul class="bulleted-list">
-            <li style="list-style-type:disc">AI요약, 요약 내용 CRUD
-                <ul class="bulleted-list">
-                    <li style="list-style-type:circle">WebClient로 AI 서버에 연결, 대화 음성 파일을 전송하여 요약을 받아 저장</li>
-                </ul>
-            </li>
+            <li style="list-style-type:disc">WebClient로 AI 서버에 연결, 대화 음성 파일을 전송하여 요약을 받아 저장</li>
         </ul>
+        <h3 class=""><strong>요약 조회 웹 페이지</strong></h3>
         <ul class="bulleted-list">
-            <li style="list-style-type:disc">요약 조회 웹 페이지
-                <ul class="bulleted-list">
-                    <li style="list-style-type:circle">ThymLeaf를 이용해 작성</li>
-                </ul>
-            </li>
+            <li style="list-style-type:disc">ThymLeaf를 이용해 작성</li>
         </ul>
         <br>
         <hr class="dark-mode" />
@@ -354,12 +344,10 @@
                         class="img-detail" src="images/image%2019.png"/></a></figure>
             </div>
         </div>
+        <h3 class=""><strong>알람 페이지 작성</strong></h3>
         <ul class="bulleted-list">
-            <li style="list-style-type:disc">알람 페이지 작성
-                <ul class="bulleted-list">
-                    <li style="list-style-type:circle">이미지로 인해 전체 페이지 로딩이 늦어지는 문제를 해결하기 위해 fetch를 이용해서 이미지 지연로딩을 구현</li>
-                </ul>
-            </li>
+            <li style="list-style-type:disc">이미지로 인해 전체 페이지 로딩이 늦어지는 문제를 해결하기 위해 fetch를 이용해서 이미지 지연로딩을 구현</li>
+
         </ul>
         <br>
         <hr class="dark-mode" />
