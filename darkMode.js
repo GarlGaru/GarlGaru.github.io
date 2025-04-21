@@ -15,6 +15,9 @@ darkToggle.addEventListener('click', () => {
     document.querySelectorAll('hr').forEach(highlight => {
         highlight.classList.toggle('dark-mode');
     });
+    document.querySelectorAll('.round-card').forEach(highlight => {
+        highlight.classList.toggle('dark-mode');
+    });
 
     if(document.body.classList.contains('dark-mode')) {
         darkToggle.src = sunIconPath;

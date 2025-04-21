@@ -144,6 +144,20 @@ hr.dark-mode{
     border-bottom: 1px solid rgba(212, 212, 212, 0.09);
 }
 
+
+.round-card {
+    display: inline-block;
+    border-radius: 1.75rem;
+    padding: 0.5rem 2rem 1rem;
+    margin: 1rem 0.1rem 0.1rem;
+    vertical-align: middle;
+    width: 100%;
+    border: 2px solid rgba(50, 50, 50, 0.09);
+}
+.round-card.dark-mode {
+    border: 2px solid rgba(212, 212, 212, 0.09);
+}
+
 img {
     max-width: 100%;
 }
@@ -645,6 +659,8 @@ code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mo
     background: rgba(86, 67, 40, 1);
 }
 .highlight-teal_background.dark-mode {
+    /*margin: 0.5rem;*/
+    padding: 0.2rem 0.1rem;
     background: rgba(36, 61, 48, 1);
 }
 .highlight-yellow_background {
