@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             } catch (e) {
                 console.error(e);
-                img.removeAttribute('src');
+                img.src = 'svgs/alert-error-svgrepo-com.svg';
             }
         });
 
