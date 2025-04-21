@@ -149,9 +149,10 @@ hr.dark-mode{
     display: inline-block;
     border-radius: 1.75rem;
     padding: 0.5rem 2rem 1rem;
-    margin: 1rem 0.1rem 0.1rem;
-    vertical-align: middle;
-    width: 100%;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    /*margin-right: 1rem;*/
+    width: 90%;
     border: 2px solid rgba(50, 50, 50, 0.09);
 }
 .round-card.dark-mode {
@@ -659,7 +660,7 @@ code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mo
     background: rgba(86, 67, 40, 1);
 }
 .highlight-teal_background.dark-mode {
-    /*margin: 0.5rem;*/
+    margin-top: 1rem;
     padding: 0.2rem 0.1rem;
     background: rgba(36, 61, 48, 1);
 }
@@ -669,6 +670,8 @@ code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mo
     background: rgba(203, 145, 47, 1);
 }
 .highlight-teal_background {
+    margin-top: 1rem;
+    padding: 0.2rem 0.1rem;
     transition: background-color 0.3s, color 0.3s;
     color: rgb(250, 250, 250);
     background: rgba(68, 131, 97, 1);
@@ -789,4 +792,14 @@ code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mo
 
 .checkbox-off {
     background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.image-badge{}
+
+/*@keyframes spin {*/
+/*    to { transform: rotate(360deg); }*/
+/*}*/
+.loading-icon{
+    display: inline-block;
+    /*animation: spin 1s linear infinite;*/
 }

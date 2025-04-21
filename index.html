@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="style.css" />
     <script src="animation.js" defer></script>
     <script src="darkMode.js" defer></script>
+    <script src="imageLoading.js" defer></script>
 </head>
 <body class="dark-mode">
 <article class="page sans">
@@ -39,29 +40,44 @@
 
         <div class="column-list skill-list">
             <div style="width: 15%; text-indent: 1em" class="column"><strong>Proficient</strong></div>
-            <div style="width: 85%" class="column">
-                <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white"><img src="https://img.shields.io/badge/Spring%20Boot-6DB33F?style=for-the-badge&logo=Spring%20Boot&logoColor=white"><img src="https://img.shields.io/badge/JPA-6DB33F?style=for-the-badge&logo=spring&logoColor=white"><img src="https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white">
+            <div style="width: 85%; display: flex" class="column">
+                <img class="image-badge" src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white">
+                <img class="image-badge" src="https://img.shields.io/badge/Spring%20Boot-6DB33F?style=for-the-badge&logo=Spring%20Boot&logoColor=white">
+                <img class="image-badge" src="https://img.shields.io/badge/JPA-6DB33F?style=for-the-badge&logo=spring&logoColor=white">
+                <img class="image-badge" src="https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white">
             </div>
         </div>
 
         <div class="column-list skill-list">
             <div style="width: 15%; text-indent: 1em" class="column"><strong>Familiar</strong></div>
-            <div style="width: 85%" class="column">
-                <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=Docker&logoColor=white"><img src="https://img.shields.io/badge/C++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white"><img src="https://img.shields.io/badge/nginx-009639.svg?style=for-the-badge&logo=nginx&logoColor=white"><img src="https://img.shields.io/badge/Thymeleaf-005F0F?style=for-the-badge&logo=Thymeleaf&logoColor=white"><img src="https://img.shields.io/badge/Mybatis-000000?style=for-the-badge&logo=Mybatis&logoColor=white">
+            <div style="width: 85%; display: flex" class="column">
+                <img class="image-badge" src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=Docker&logoColor=white">
+                <img class="image-badge" src="https://img.shields.io/badge/C++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white">
+                <img class="image-badge" src="https://img.shields.io/badge/nginx-009639.svg?style=for-the-badge&logo=nginx&logoColor=white">
+                <img class="image-badge" src="https://img.shields.io/badge/Thymeleaf-005F0F?style=for-the-badge&logo=Thymeleaf&logoColor=white">
+                <img class="image-badge" src="https://img.shields.io/badge/Mybatis-000000?style=for-the-badge&logo=Mybatis&logoColor=white">
             </div>
         </div>
 
         <div class="column-list skill-list">
             <div style="width: 15%; text-indent: 1em" class="column"><strong>Tested</strong></div>
-            <div style="width: 85%" class="column">
-                <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=Python&logoColor=white"><img src="https://img.shields.io/badge/React-%2320232a?style=for-the-badge&logo=React&logoColor=%2361DAFB"><img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white"><img src="https://img.shields.io/badge/MongoDB-%234ea94b?style=for-the-badge&logo=MongoDB&logoColor=white"><img src="https://img.shields.io/badge/AWS-%23FF9900?style=for-the-badge&logo=amazon-web-services&logoColor=white">
+            <div style="width: 85%; display: flex" class="column">
+                <img class="image-badge" src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=Python&logoColor=white">
+                <img class="image-badge" src="https://img.shields.io/badge/React-%2320232a?style=for-the-badge&logo=React&logoColor=%2361DAFB">
+                <img class="image-badge" src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white">
+                <img class="image-badge" src="https://img.shields.io/badge/MongoDB-%234ea94b?style=for-the-badge&logo=MongoDB&logoColor=white">
+                <img class="image-badge" src="https://img.shields.io/badge/AWS-%23FF9900?style=for-the-badge&logo=amazon-web-services&logoColor=white">
             </div>
         </div>
         <br/>
         <div class="column-list skill-list">
             <div style="width: 15%; text-indent: 1em" class="column"><strong>Tools</strong></div>
-            <div style="width: 85%" class="column">
-                <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=Git&logoColor=white"><img src="https://img.shields.io/badge/intellij-000000.svg?style=for-the-badge&logo=intellijidea&logoColor=white"/><img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=Figma&logoColor=white"/><img src="https://img.shields.io/badge/Jira-0052CC?style=for-the-badge&logo=jira&logoColor=white"/><img src="https://img.shields.io/badge/Notion-000000?style=for-the-badge&logo=notion&logoColor=white"/>
+            <div style="width: 85%; display: flex" class="column">
+                <img class="image-badge" src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=Git&logoColor=white">
+                <img class="image-badge" src="https://img.shields.io/badge/intellij-000000.svg?style=for-the-badge&logo=intellijidea&logoColor=white"/>
+                <img class="image-badge" src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=Figma&logoColor=white"/>
+                <img class="image-badge" src="https://img.shields.io/badge/Jira-0052CC?style=for-the-badge&logo=jira&logoColor=white"/>
+                <img class="image-badge" src="https://img.shields.io/badge/Notion-000000?style=for-the-badge&logo=notion&logoColor=white"/>
             </div>
         </div>
 
@@ -367,7 +383,7 @@
 
         <div class="round-card dark-mode">
             <div class="column-list">
-                <div style="width:25%" class="column"><h2 class="">Translate</h2>
+                <div style="width:25%" class="column"><h2 class="">Translate</h2>(가칭)
                     <p class="">2025.3 ~ </p></div>
                 <div style="width:75%" class="column"><p class=""><a
                         href="https://github.com/GarlGaru/Translate" target="_blank">https://github.com/GarlGaru/Translate</a>
