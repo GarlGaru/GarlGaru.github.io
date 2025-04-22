@@ -803,3 +803,25 @@ code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mo
     display: inline-block;
     /*animation: spin 1s linear infinite;*/
 }
+
+@keyframes slideInRightBounce {
+    0% {
+        transform: translateX(1000px);
+        opacity: 0;
+    }
+    40% {
+        transform: translateX(-10%);
+    }
+    60% {
+        transform: translateX(5%);
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.slide-in {
+    animation: slideInRightBounce 0.8s ease-out forwards;
+}
+

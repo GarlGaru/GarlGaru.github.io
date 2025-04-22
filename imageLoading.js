@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const titles = Array.from(document.querySelectorAll('img.img-title'));
     const details = Array.from(document.querySelectorAll('img.img-detail'));
     const images = titles.concat(details);
+
   // 원래 src 저장 후 제거
     const imagesUrls = images.map(img => img.getAttribute('src'));
     const badgeUrls = badges.map(img => img.getAttribute('src'));
@@ -42,11 +43,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 const objectURL = URL.createObjectURL(blob);
 
                 img.src = objectURL;
-                // 로드 또는 에러 이벤트 대기
                 await new Promise(resolve => {
                     img.addEventListener('load', () => {
                         // console.log(img.src)
                         URL.revokeObjectURL(objectURL);
+                        img.classList.add('slide-in');
                         resolve();
                     }, { once: true });
                     img.addEventListener('error', () => {
@@ -72,5 +73,7 @@ document.addEventListener('DOMContentLoaded', () => {
 function disappearLoading() {
     console.log('Badge Loading Complete');
     document.querySelectorAll('img.image-badge.loading-icon')
-        .forEach(icon => icon.classList.remove('loading-icon'));
+        .forEach(icon => {
+            icon.classList.remove('loading-icon');
+        });
 }
