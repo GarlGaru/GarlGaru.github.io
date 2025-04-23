@@ -806,22 +806,22 @@ code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mo
 
 @keyframes slideInRightBounce {
     0% {
-        transform: translateX(1000px);
+        transform: translateX(300px);
         opacity: 0;
     }
     40% {
         transform: translateX(-10%);
+        opacity: 1;
     }
     60% {
         transform: translateX(5%);
     }
     100% {
         transform: translateX(0);
-        opacity: 1;
     }
 }
 
 .slide-in {
-    animation: slideInRightBounce 0.8s ease-out forwards;
+    animation: slideInRightBounce 0.5s ease-out forwards;
 }
 
