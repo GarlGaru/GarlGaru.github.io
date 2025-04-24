@@ -150,7 +150,7 @@ hr.dark-mode{
     border-radius: 1.75rem;
     padding: 0.5rem 2rem 1rem;
     margin-top: 1rem;
-    margin-left: 1rem;
+    margin-left: 0.2rem;
     /*margin-right: 1rem;*/
     width: 90%;
     border: 2px solid rgba(50, 50, 50, 0.09);
@@ -198,6 +198,17 @@ img {
 .column:last-child {
     padding-right: 0;
 }
+
+.skill-badge{
+    display: flex;
+    width: 85%;
+}
+
+.skill-level{
+    width: 15%;
+    text-indent: 1em
+}
+
 
 .table_of_contents-item {
     display: block;
@@ -796,12 +807,13 @@ code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mo
 
 .image-badge{}
 
-/*@keyframes spin {*/
-/*    to { transform: rotate(360deg); }*/
-/*}*/
+
 .loading-icon{
     display: inline-block;
-    /*animation: spin 1s linear infinite;*/
+}
+
+.image-badge.loading-icon{
+    margin: 0 2rem;
 }
 
 @keyframes slideInRightBounce {
